@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+// $config['base_url'] = 'http://www.example.com';
+$config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$config['base_url'] .= "://" . $_SERVER['HTTP_HOST'];
+$config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+
+<head>
+  <config baseurl="192.168.65.0/28"></config>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" herf="https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Roboto&query=source+sans+Pro">
+  <title>MOREET</title>
+  <script src=NAV_BAR/images/moreet.png></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+        <i class="fab fa-accusoft"></i>
+        <a href="">MOREET</a>
+    </div>
+
+    <ul class="navbar__menu">
+        <li><a href="">SHOP</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">JOURNAL</a></li>
+        <li><a href="">CONTACT</a></li>
+        <li><a href="">MEMBERS</a></li>
+    </ul>
+
+    <ul class="navbar__icons">
+      <li><i class="user-graduate-solid.svg"></i></li>
+    </ul>
+    
+    <a href="#" class="navbar__tooglebtn">
+      <i class="far fa-bars"></i>
+    </a>
+  </nav>
+
+  <div class="center">
+    <div class="center__picture">
+        <i class="fab fa-accusoft"></i>
+        <a href="">MOREET</a>
+    </div>
+
+</body>
+</html>
